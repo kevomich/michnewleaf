@@ -1,7 +1,7 @@
 import os
 
 # Specify the directory path (use "." for current directory)
-directory_path = r"C:/Users/Kelvin/Downloads/Documents/DOCS/The%20Ultimate%20Python%20Handbook.pdf"
+directory_path = r"C:\Users\Kelvin\Downloads\Programs"
 
 try:
     contents = os.listdir(directory_path)
@@ -12,3 +12,8 @@ except FileNotFoundError:
     print("Error: Directory not found.")
 except PermissionError:
     print("Error: Permission denied.")
+except Exception:
+    print("out of context")
+
+
+
